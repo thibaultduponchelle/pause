@@ -33,7 +33,7 @@ $ENV{TERM} //= 'xterm';
 # Since we won't (??) be using DO for this in real work, I'm not trying to
 # really fix it, I just want it logging before we start doing work.  This will
 # do the trick:
-run_cmd(qw( systemctl restart systemd-journald.service ));
+#run_cmd(qw( systemctl restart systemd-journald.service ));
 
 # Don't run apt-get update if apt is already busy. We need to wait or we'll
 # fail to update. Also wait for /var/lib/dpkg/lock-frontend
@@ -453,7 +453,7 @@ for my $service (qw( rsync )) {
   run_cmd(qw( systemctl --no-pager status ), $service );
 }
 
-run_cmd(qw( systemctl restart systemd-journald.service ));
+#run_cmd(qw( systemctl restart systemd-journald.service ));
 
 run_cmd(qw( systemctl restart nginx ));
 
