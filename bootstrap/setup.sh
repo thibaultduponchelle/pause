@@ -2,9 +2,9 @@
 
 apt-get update
 apt-get install git vim sudo
-
+cd $HOME
 git clone https://github.com/thibaultduponchelle/pause.git -b tib
 
-cd pause
+cd pause/bootstrap
 
-./selfconfig-root --host paus.example.com --user=USER --pass=PASS --self-signed
+./selfconfig-root --host pause.example.com --user=USER --pass=PASS --self-signed
