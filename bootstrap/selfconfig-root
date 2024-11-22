@@ -336,11 +336,11 @@ symlink("/etc/nginx/sites-available/$hostname", "/etc/nginx/sites-enabled/$hostn
   or die "can't symlink nginx conf: $!";
 
 # Firewall config
-run_cmd(qw(ufw allow http));
-run_cmd(qw(ufw allow https));
-run_cmd(qw(ufw allow rsync));
-run_cmd(qw(ufw allow ssh));
-run_cmd(qw(ufw --force enable));
+#run_cmd(qw(ufw allow http));
+#run_cmd(qw(ufw allow https));
+#run_cmd(qw(ufw allow rsync));
+#run_cmd(qw(ufw allow ssh));
+#run_cmd(qw(ufw --force enable));
 
 # Install ssl cert
 unless ($opt->self_signed) {
