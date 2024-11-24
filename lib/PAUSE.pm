@@ -114,7 +114,7 @@ $PAUSE::Config ||=
      RUNTIME_MLDISTWATCH => 600, # 720 was the longest of on 2003-08-10,
                                  # 2004-12-xx we frequently see >20 minutes
                                  # 2006-05-xx 7-9 minutes observed
-     SLEEP => 75,
+     SLEEP => 1,
      TIMEOUT => 60*60,
      TRUST_IS_SSL_HEADER => 1,
      TMP => '/data/pause/tmp/',
